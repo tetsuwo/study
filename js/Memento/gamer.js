@@ -1,6 +1,5 @@
-/**
+/*!
  * Gamer
- *
  * @role Originator
  */
 
@@ -23,7 +22,7 @@ Gamer.prototype.getMoney = function() {
 
 Gamer.prototype.bet = function() {
     var dice = parseInt(Math.random() * 6) + 1;
-    
+
     if (dice === 1) {
         this.money += 100;
         log("所持金が増えました。");
@@ -47,6 +46,7 @@ Gamer.prototype.createMemento = function() {
             m.addFruit(f);
         }
     }
+    return m;
 };
 
 Gamer.prototype.restoreMemento = function(memento) {
